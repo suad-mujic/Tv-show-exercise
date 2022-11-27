@@ -1,0 +1,294 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 24, 36);
+    background-image:linear-gradient(rgba(0, 4, 24, 0.9),rgba(0,8,51,.9)), url('kino7.jpg');
+}
+
+/* .background{
+
+    
+height: 100vh;
+width: 100vw;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+} */
+
+#searchSection {
+    width: 100%;
+    height :25em;
+    
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    
+    justify-content: center;
+    
+    
+}
+
+h1{
+    font-size:xxx-large;
+    font-family: sans-serif;
+    color: #E08769;
+}
+
+.searchForm{
+width: 100%;
+max-width: 700px;
+background: rgba(255, 255, 255, .2);
+border-radius: 60px;
+padding: 10px 20px;
+display: flex;
+align-items: center;
+
+
+}
+ input{
+    width: 15em;
+    height: 1.5em;
+    padding: 5px;
+    font-size: 19px;
+    background: rgba(255, 255, 255, .2);
+    border-radius: 60px;
+    border-spacing: 4px;
+   
+    color: #E08769;
+    background: transparent;
+
+}
+
+
+button{
+    width: 8em;
+    height: 2.5em;
+    padding: 5px;
+    font-size: 17px;
+    background: rgba(255, 255, 255, .2);
+border-radius: 60px;
+color: #E08769;
+cursor: pointer;
+  overflow: hidden;
+}
+
+
+button:hover{
+    transform: scale(1.05);
+}
+::placeholder{
+    color: #e0876969
+}
+
+#theResult{
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    
+    justify-content: center;
+    
+    
+    
+    
+}
+
+
+
+.singleImage{
+    padding: 0 10px 10px;
+    margin: 10px;
+    border-radius: 5px;
+    
+    
+}
+
+img{
+    border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.imgPar{
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+    border-radius: 5px;
+    
+    
+}
+
+#info {
+    font-size: 6em;
+     color: white
+}
+h2{
+    color: white;
+    font-family: sans-serif;
+}
+.singleImage:hover{
+    transform: scale(1.03);
+    opacity: 2;
+    transition: transform ease-in-out 0.3s;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
+}
+
+.singleImage:hover .imgPar{
+    opacity: 2;
+    color: #5EE075;
+    transform: translateZ(-50px);
+    
+}
+
+/*  */
+#fullpage {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    /* z-index: 9999; */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 118vh;
+    background-size: contain;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-color: rgba(0, 0, 0, .9) ;
+    
+    
+  }
+#paragraf{
+    color: white;
+    width: 300px;
+    height: 500px;
+    opacity: 2;
+    
+    font-family: sans-serif;
+    font-size: 30;
+}
+
+
+#image{
+    width: 680px;
+    height: 1000px;
+    margin: 25px 25px ;
+}
+
+
+@media only screen and (max-width: 425px){
+	/*Small smartphones [325px -> 425px]*/
+
+h1{
+    font-size: 25px;
+    
+}
+
+#searchSection {
+    width: 100%;
+    height :15em;
+    
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    
+    justify-content: center;
+    
+    
+}
+
+
+.searchForm{
+    width: 100%;
+    
+    height: 250;
+    background: rgba(255, 255, 255, .2);
+    border-radius: 60px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    
+    
+    }
+     input{
+        width: 15em;
+        height: 1.5em;
+        padding-left: 9px;
+        font-size: 14px;
+        background: rgba(255, 255, 255, .2);
+        
+        border-color:#E08769 ;
+        border-top: none;
+        border-right: none;
+        
+        color: #E08769;
+        background: transparent;
+    
+    }
+    
+    
+    button{
+        width: 4em;
+        height: 2.5em;
+        padding: 5px;
+        font-size: 14px;
+        background: rgba(255, 255, 255, .2);
+    border-radius: 60px;
+    color: #E08769;
+    cursor: pointer;
+      overflow: hidden;
+    }
+img{
+    height: 9em;
+    width: 9em;
+}
+
+    .singleImage{
+        width: 164px;
+        height: 194px;
+        padding: 0 2px 2px;
+        margin: 2px;
+        border-radius: 5px;
+        
+        
+    }
+
+
+#fullpage img{
+    width: 400px;
+    height: 450px;
+    padding: 0;
+    margin-top: 0;
+   
+}
+#fullpage #paragraf{
+    font-size: small;
+    padding-right: 10px;
+    margin-top: 0;
+    height: 450px;
+}
+#info {
+    font-size: 1.3em;
+     color: white
+}
+h2{font-size: 0.7em;
+
+}
+}
+
+/* @media only screen and (max-width: 1400px){
+    #info{
+        font-size: 5em;
+    }
+} */

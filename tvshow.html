@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tv Shows</title>
+    <link rel="stylesheet" href="tvshow.css" />
+  </head>
+  <body>
+    <div>
+      <section id="searchSection" class="background">
+        <h1>Search for a Tv Show</h1>
+
+        <form id="searchForm">
+          <input
+            type="text"
+            placeholder="Tv Show title"
+            id="showName"
+            name="query"
+            onfocus="this.value=''"
+          />
+          <button id="searchButton">Search</button>
+        </form>
+      </section>
+
+      <main id="theResult">
+        <h1 id="info">Welcome to the Tv Show info site</h1>
+        <h2 id="info2">
+          Where you can find all the nice info about your favorite tv shows
+        </h2>
+      </main>
+    </div>
+    <!--  -->
+    <div id="fullpage" onclick="this.style.display='none';">
+      <!-- <div id="fullpage" onclick="this.style.display='none';"></div> -->
+      <img src="" alt="" id="image" onclick="this.style.display='none';" />
+      <p id="paragraf"></p>
+    </div>
+    <!--  -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="tvshow.js"></script>
+  </body>
+</html>
