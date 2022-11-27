@@ -236,36 +236,67 @@ h1{
      input{
         width: 15em;
         height: 1.5em;
-        padding-left: 9px;
+        padding-left: 0;
         font-size: 14px;
         background: rgba(255, 255, 255, .2);
-        
-        border-color:#E08769 ;
+        margin: 0;
+        border: 1px solid #7283c8;
         border-top: none;
         border-right: none;
         
-        color: #E08769;
+        color: white;
         background: transparent;
     
     }
     
     
     button{
-        width: 4em;
+        width: 8em;
         height: 2.5em;
         padding: 5px;
         font-size: 14px;
         background: rgba(255, 255, 255, .2);
     border-radius: 60px;
-    color: #E08769;
+    
     cursor: pointer;
       overflow: hidden;
     }
+
+    #buttonText{
+        
+        color: white;
+        margin: 5px;
+        padding: 15px;
+        letter-spacing: 1px;
+    }
+    #buttonIcon{
+        color: white;
+        background-color: 5EE075;
+        margin-right: 5px;
+        margin-top: 5px;
+        scale: 1.5;
+        
+    }
+    ::placeholder{
+        color: rgba(0, 111, 167, 0.514);
+        font-weight: bold;
+
+
+
+
+    }
+
 img{
     height: 9em;
-    width: 9em;
+    width: 7.2em;
+    margin-left: 20px;
 }
-
+.imgPar{
+    margin-left: 20px;
+    color: white;
+    opacity: 2;
+    font-size: 0.8em;
+}
     .singleImage{
         width: 164px;
         height: 194px;
@@ -291,7 +322,7 @@ img{
     height: 450px;
 }
 #info {
-    font-size: 1.3em;
+    font-size: 1.0em;
      color: white
 }
 h2{font-size: 0.7em;
